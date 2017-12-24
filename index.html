@@ -1,0 +1,417 @@
+<idoctype html>
+<head>
+	<meta charset = "utf-8">
+	<link href='normalize.css' rel="stylesheet">
+	<script src="scrollByAnimated.js"></script>
+	<link href='https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'>
+	
+	<style>
+		html { font-family: 'Spoqa Han Sans'; font-weight: 200;}
+		body{ background:black;}
+		header {width:1200px; height:44px; position: fixed;left:calc(50% - 480px);z-index: 9999;}
+		header #logo {float:left;  width:100px;height:44px;line-height: 44px;text-align: center;color:black;font-size: 0.8em;font-weight:400;}
+		header #menu {float:right; width:600px; padding-right:350px;}
+		header #menu li{float:left; width:100px; height: 44px; line-height:44px;text-align: center;color:lightgray;font-size: 0.8em;font-weight:400;cursor:pointer; }
+		section{width:1200px; height:800px; margin:0 auto;position: relative;}
+		section h2{ font-size: 2.5em; font-weight:100; position: absolute;line-height: 1.2}
+		section h3{ font-size: 2em; font-weight: 100; position: absolute; line-height: 1.2;}
+		section p{ font-size: 1em; font-weight:100; position: absolute;line-height: 1.7;width:550px;}
+		section h4{color: white; font-size: 1.3em; position: absolute; font-weight: 500; }
+		section h5{ font-size: 1.3em; position: absolute; font-weight: 1.2;width: 300px; height: 100px; }
+		section h6{ font-size: 1em; position: absolute; font-weight: 1.7;width: 250px; height: 50px; }
+
+
+		section.img{width: 100%;}
+
+		
+		#s1{background:url('./1.jpg'); 
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s1 h2{left:670px; top:400px;}
+		
+		#s2{background:url('./22.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s2 h2{left:200px; top:200px;}
+		#s2 h3{left: 670px; top: 200px;}
+		#s2 p{left:670px; top:280px;}
+		
+		
+		#s3{background:url('./33.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;background-attachment: fixed;}
+			#img_3 {width:1200px; }
+		#s4{background:url('./44.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%; background-attachment: fixed;}
+			#img_4 {width:1200px; }
+		#s5{background:url('./sll.jpg');
+			background-repeat: no-repeat; width: 1200px; 
+			background-attachment: fixed;
+			}
+		
+			#img_5{width: 1200px; 
+				}		
+		#s6{background:url('./6.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+			#img_6{width: 1200px; 
+				}	
+		#s6 h3{color: black; left:100px; top:20px;}
+		#s6 p{color: black; left:100px; top:100px;}
+		#s62{background:url('./622.png');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+			#img_62{width: 1200px; }
+		#s63{background:url('./633.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+			#img_63{width: 1200px}
+		#s63 h3{color: white;left:100px; top:20px;}
+		#s63 p{color: white;left:100px; top:100px;}	
+		
+		#s64{background:url('./64.png');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s65{background:url('./655.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+			#img_65{width: 1200px;}
+		#s65 h3{color: white; left:100px; top:20px;}
+		#s65 p{color: white; left:100px; top:100px;}
+		
+		#s66{background:url('./66.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s66 h5{color:black;			
+			margin-left : 980px; margin-top:400px; 
+			color:black;  font-size:35px;
+			 -webkit-transform:rotate(90deg);}		
+		#s7{background:url('./7.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#img_7{width: 1200px;
+				}
+		#s8{background:url('./8.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s8 h3{left:670px; top:100px;}
+		#s8 p{left:670px; top:180px;}
+		#s9{background:url('./9.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s9 
+		h6{color:black;			
+			margin-right : 1200px; margin-top:100px; 
+			color:black;  font-size:35px;
+			 -webkit-transform:rotate(90deg);}	
+			
+					
+
+		#s92{background:url('./92.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s92 h3{left:670px; top:10px;}
+		#s92 p{left:670px; top:90px;}	
+		
+	
+		#s10{background:url('./1010.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s10 h3{left:670px; top:10px;}
+		#s10 p{left:670px; top:90px;}
+		#s11{background:url('./11.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s11 h2{left:350px; top:100px;}
+		#s11 p{left:350px; top:180px;}
+			#img_11{width: 1100px; margin-left: 40px;
+				margin-top:15px; }
+		#s12{background:url('./12.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s12 h3{color: white; left:670px; top:100px;}
+		#s12 p{color: white; left:670px; top:180px;}
+		#s13{background:url('./star.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%; background-attachment: fixed;}
+		#s13 h2{left:350px; top:100px;}
+		#s13 p{left:350px; top:180px;}
+			#img_13 {width:1200px; }
+		#s14{background:url('./14.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		
+		#s14 p{left:350px; top:180px;}
+			#img_11{width: 1100px; margin-left: 40px;
+				margin-top:15px; }
+		#s15{background:url('./15.jpg');
+			background-repeat: no-repeat; width: 1200px; background-size: 100%;}
+		#s15 h4{color: white; top: 700px; left: 1150px;}
+		#s15 h3{color: white; left:400px; top:100px;}
+		#s15 p{color: white; left:400px; top:180px;}
+		
+	
+	</style>
+	<script language="javascript">
+		ScrollRate = 8;
+		
+		function scrollDiv_init() {
+			DivElmnt = document.getElementById('MyDivName');
+			ReachedMaxScroll = false;
+			
+			DivElmnt.scrollTop = 0;
+			PreviousScrollTop  = 0;
+			
+			ScrollInterval = setInterval('scrollDiv()', ScrollRate);
+		}
+		
+		function scrollDiv() {
+			
+			if (!ReachedMaxScroll) {
+				DivElmnt.scrollTop = PreviousScrollTop;
+				PreviousScrollTop++;
+				
+				ReachedMaxScroll = DivElmnt.scrollTop >= (DivElmnt.scrollHeight - DivElmnt.offsetHeight);
+			}
+			else {
+				//ReachedMaxScroll = (DivElmnt.scrollTop == 0)?false:true;
+				
+				//DivElmnt.scrollTop = PreviousScrollTop;
+				//PreviousScrollTop--;
+			}
+		}
+		
+		function pauseDiv() {
+			clearInterval(ScrollInterval);
+		}
+		
+		function resumeDiv() {
+			PreviousScrollTop = DivElmnt.scrollTop;
+			ScrollInterval    = setInterval('scrollDiv()', ScrollRate);
+		}
+	</script>
+</head>
+<body onLoad="scrollDiv_init()">
+	<div id="MyDivName" style="overflow:auto; width: auto;height:1080px" onMouseOver="pauseDiv()" onMouseOut="resumeDiv()">
+		
+		<audio autoplay loop> 
+			<source src="voyeur.mp3" type="audio/ogg">
+		</audio>
+		
+		<header>
+			
+			<ul id="menu">
+				<li id="m1">1</li>
+				<li id="m2">2</li>
+				<li id="m3">3</li>
+				<li id="m4">4</li>
+				<li id="m5">5</li>
+				
+			</ul>
+		</header>
+		<section id="s1">
+			<h2> 내가 <br>그린 <br> 긴 <br>그림</h2>
+		</section>
+		<section id="s2">
+			<h3>선과 선이 만나</h3>
+			<p>주룩주룩 지글지글 자글자글 동글동글 <br>
+				살금살금 슥슥삭삭 사각사각 속닥속닥<br>
+				빙글빙글 데굴데굴 빙그르르 데구르르 <br>
+				주룩주룩 지글지글 자글자글 동글동글 <br>
+				살금살금 슥슥삭삭 사각사각 속닥속닥<br>
+				빙글빙글 데굴데굴 빙그르르 데구르르 <br>
+				주룩주룩 지글지글 자글자글 동글동글 <br>
+				살금살금 슥슥삭삭 사각사각 속닥속닥<br>
+				빙글빙글 데굴데굴 빙그르르 데구르르 <br>
+				주룩주룩 지글지글 자글자글 동글동글 <br>
+				살금살금 슥슥삭삭 사각사각 속닥속닥<br>
+				빙글빙글 데굴데굴 빙그르르 데구르르 <br>
+			
+			</p>
+			
+		</section>
+		<section id="s3">
+				<img id="img_3" src="./3.png">
+		</section>
+		<section id="s4">
+				<img id="img_4" src="./4.png">
+		</section>
+		<section id="s5">
+			
+				
+				<img id="img_5" src="./road11.png">
+				
+		</section>
+		<section id="s6">
+			<img id="img_6" src="./road22.png">
+			<h3>집 가는 길</h3>
+			<p> 살짝 가파른 오르막길은 <br>
+				앞서 가는 트럭 뒤에 매달려 가고 싶다<br>
+				라는 생각이 들게 만들었다. <br>
+				책가방은 무거운데 <br>
+				햇빛은 쨍하고 매미는 시끄럽고<br>
+				4교시 끝나고 걸어가던 그 길은<br>
+				너무 힘들어서 절로 얼굴을 찌푸려
+				
+				
+		</section>
+		<section id="s62">
+				<img id="img_62" src="./road33.png">
+		</section>
+		<section id="s63">
+			
+
+			<p> 여름날 하루는 폴라포를 먹으면서 
+				집에 가고 있었는데<br>
+				동네 할머니들이 정자에 앉아서 <br>
+				나한테 한 입만 줘보라고 하셨다.<br>
+				초딩의 나는 고민하다가 드렸는데 <br>
+				장난이라며 다들 웃으시고		  			
+				</p>
+				
+				
+				<img id="img_63" src="./road44.png">
+				
+			
+				
+		</section>
+		<section id="s64">
+				<img id="img_64" src="./road5.png">
+		</section>
+		<section id="s65">
+				<img id="img_65" src="./road66.png">
+				<p> 4교시까지 마치고 집에 가면<br>
+				할아버지가 가끔 라면을 끓여주셨는데<br>
+				계란 살짝 푼 라면인데 진짜 맛있었음.<br>
+				할아버지 보고싶다.
+				<br><Br>
+				A4용지에 볼펜
+		</section>
+		<section id="s66">
+			<h5>내가 그린 긴 그림</h5>
+			
+		</section>
+		<section id="s7">
+			
+				<img id="img_7" src="./dack.png">
+		</section>
+		<section id="s8">
+			<h3>닭</h3>
+			<p>왜 닭은 비둘기랑 비슷하게 생겼는데<br>
+				비둘기보다 덜 징그럽게 느껴질까?<br>
+				만약 닭이 사람보다 거대했다면<br>
+				치킨은 무슨 그냥 징그럽고 무서워서 집 밖에도 못나갔겠지
+				<br><br>
+				켄트지에 G펜</p>
+		</section>
+		<section id="s9">
+			<h6>선과 선이 만나</h6>
+				
+
+		</section>
+		<section id="s92">
+			<h3>누드 크로키</h3>
+			<p>30초 안에 그려보세요.<br>
+				시간이 지나면 자세가 바뀝니다.<br>
+				
+				<br><br>
+				켄트지에 2B연필</p>
+		</section>
+		
+		<section id="s10">
+				<img id="img_10" src="./10line.png">
+		</section>
+		</section>
+		<section id="s11">
+			
+			<img id="img_11" src="./dream.png">
+		</section>
+		<section id="s12">
+			<h3>꿈</h3>
+			<p>나는 내 방 침대 옆에 무릎을 안고 쭈그려 앉아 있었다.<br>
+				그 때 커다란 소리와 함께 더 커다란 운석이 내 방을 부수고 들어왔다.<br>
+				운석은 내 발 바로 앞에서 멈췄고 <br>나는 무릎에 파묻은 얼굴을 들어보았다.<br>
+				방은 먼지와 연기가 자욱했고 뻥 뚫린 벽 너머로 밤하늘이 반짝였다.<br>
+				<br><Br>
+				켄트지에 볼펜
+				</p>
+		</section>
+		<section id="s13">
+			<img id="img_13" src="./13.png">
+		</section>
+		<section id="s14">
+			<img id="img_14" src="./space.png">
+		</section>
+		<section id="s15">
+			<h3>우주를 건너</h3>
+			<p>아무 생각 없이 100번 쯤은 반복재생한 노래 중<br>
+				갑자기 혼자 그림 그리고 싶을 때 꽂혔던 노래.
+
+				<br><Br>
+				켄트지에 볼펜
+			<h4>끝</h4>
+			
+		</section>
+		
+		
+		<script>
+		window.onscroll = function(){
+			console.log(document.body.scrollTop);
+			var scrollH = document.body.scrollTop;
+			
+			if (scrollH > 800){
+				s3.style.backgroundAttachment="fixed";
+			}else{
+				s3.style.backgroundAttachment="fixed";
+			}
+
+			if (scrollH > 1300){
+				s4.style.backgroundAttachment="fixed";
+			}else{
+				s4.style.backgroundAttachment="fixed";
+			}
+			if (scrollH >4800){
+				s6.style.backgroundAttachment="scroll";
+			}else{
+				s6.style.backgroundAttachment="fixed";
+				
+			}
+			if (scrollH >5800){
+				s62.style.backgroundAttachment="scroll";			
+			}else{
+				s62.style.backgroundAttachment="fixed";	
+			}
+			if (scrollH >6800){
+				s63.style.backgroundAttachment="scroll";			
+			}else{
+				s63.style.backgroundAttachment="fixed";	
+			}
+			if (scrollH >7900){
+				s65.style.backgroundAttachment="scroll";			
+			}else{
+				s65.style.backgroundAttachment="fixed";	
+			}
+			if (scrollH >7900){
+				s13.style.backgroundAttachment="fixed";			
+			}else{
+				s13.style.backgroundAttachment="fixed";	
+			}
+
+			if(scrollH > 3300){
+				m1.style.color = "black";
+			}else{
+				m1.style.color = "lightgray";
+			}
+			if(scrollH > 4608){
+				m2.style.color = "black";
+			}else{
+				m2.style.color = "lightgray";
+			}
+			if(scrollH > 6308){
+				m3.style.color = "black";
+			}else{
+				m3.style.color = "lightgray";
+			}
+			if(scrollH > 7908){
+				m4.style.color = "black";
+			}else{
+				m4.style.color = "lightgray";
+			}
+			if(scrollH > 8700){
+				s13.style.backgroundAttachment = "fixed";
+				
+			}else{
+				s13.style.backgroundAttachment="scroll";
+			}
+			if(scrollH > 10308){
+				m5.style.color = "lightgray";
+			}else{
+				m5.style.color = "lightgray";
+			}
+
+		}
+		</script>
+	</div>	
+</body>
